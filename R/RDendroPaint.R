@@ -346,6 +346,11 @@ RDendroPaint <- function(valoresMatriz,tablaMatrix) {
   
 }
 
+
+
+#'@title pintaRDendroPaint
+#'@description Paint in console the DendroTree returned by RDendroPaint with the generic visualization
+#'@param ListaSal input DendroTree
 pintaRDendroPaint<- function(ListaSal){
   
   level=0
