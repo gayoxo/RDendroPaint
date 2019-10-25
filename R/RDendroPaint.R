@@ -311,7 +311,7 @@ procesaListaMatrix <- function (entrada,Ekival,tablaMatrix)
 #'@param tablaMatrix Cross original matrix Document-Term with relation 1 or 0 if term exist or not
 #'@return Object DendroTree 
 #'@export
-RDendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
+rdendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   return (DendroPaintFunc(valoresMatriz,tablaMatrix))
 }
 
@@ -322,7 +322,7 @@ RDendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
 #'@param tablaMatrix Cross original matrix Document-Term with relation 1 or 0 if term exist or not
 #'@return Object DendroTree 
 #'@export
-DendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
+dendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   
 
   Ekival=list();
