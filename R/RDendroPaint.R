@@ -1,4 +1,6 @@
 
+# Can extend and create
+#' @export
 setClass("DendroTree", slots=list(name="character", sons="list", documents="character", values="character"))
 
 
