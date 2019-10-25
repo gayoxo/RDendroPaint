@@ -2,7 +2,9 @@
 # Can extend and create
 #' @export DendroTree
 #' @exportClass DendroTree
-setClass("DendroTree", slots=list(name="character", sons="list", documents="character", values="character"))
+DendroTree<-setClass("DendroTree", slots=list(name="character", sons="list", documents="character", values="character"))
+
+
 
 
 PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
