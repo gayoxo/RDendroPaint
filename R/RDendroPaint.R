@@ -307,13 +307,13 @@ procesaListaMatrix <- function (entrada,Ekival,tablaMatrix)
 
 
 
-#'@title RDendroPaint
+#'@title DendroPaintFunc
 #'@description Paint in console the dondrogram and return a list with non empty cross elements group
 #'@param valoresMatriz Tree Matrix with all grups generatod by, normally from 2 to limit-1 \"cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))\"
 #'@param tablaMatrix Cross original matrix Document-Term with relation 1 or 0 if term exist or not
 #'@return Object DendroTree 
 #'@export
-RDendroPaint <- function(valoresMatriz,tablaMatrix) {
+DendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   
 
   Ekival=list();
@@ -617,7 +617,7 @@ valoresDendro = cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))
 
 #WriteDendro(valoresDendro)
 
-ListaSal=RDendroPaint(valoresDendro,t(TDM))
+ListaSal=DendroPaintFunc(valoresDendro,t(TDM))
 
 pintaRDendroPaint(ListaSal)
 }

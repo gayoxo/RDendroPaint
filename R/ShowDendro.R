@@ -365,6 +365,7 @@ procesaListaMatrixNoFile <- function (entrada,Ekival,tablaMatrix)
 #'@param masdocumenWrite True for extra info of documents, default False if no estra info
 #'@param masvacios Paint emptry cross elements groups
 #'@return list with non empty element groups
+#'@export
 WriteDendro <- function(valoresMatriz,tablaMatrix,masdocumenWrite=FALSE,masvacios=FALSE) {
 
   ClusterSet=list();
