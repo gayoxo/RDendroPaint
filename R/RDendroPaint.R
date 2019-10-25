@@ -310,7 +310,8 @@ procesaListaMatrix <- function (entrada,Ekival,tablaMatrix)
 #'@param valoresMatriz Tree Matrix with all grups generatod by, normally from 2 to limit-1 \"cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))\"
 #'@param tablaMatrix Cross original matrix Document-Term with relation 1 or 0 if term exist or not
 #'@return Object DendroTree 
-DendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
+#'@export
+RDendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   return (DendroPaintFunc(valoresMatriz,tablaMatrix))
 }
 
@@ -320,6 +321,7 @@ DendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
 #'@param valoresMatriz Tree Matrix with all grups generatod by, normally from 2 to limit-1 \"cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))\"
 #'@param tablaMatrix Cross original matrix Document-Term with relation 1 or 0 if term exist or not
 #'@return Object DendroTree 
+#'@export
 DendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   
 
@@ -367,6 +369,7 @@ DendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
 #'@title pintaRDendroPaint
 #'@description Paint in console the DendroTree returned by RDendroPaint with the generic visualization
 #'@param ListaSal input DendroTree
+#'@export
 pintaRDendroPaint<- function(ListaSal){
   
   level=0
