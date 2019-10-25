@@ -2,18 +2,28 @@
 % Please edit documentation in R/RDendroPaint.R
 \name{DendroPaintFunc}
 \alias{DendroPaintFunc}
-\title{DendroPaintFunc}
+\title{RDendroPaintFunc}
 \usage{
+DendroPaintFunc(valoresMatriz, tablaMatrix)
+
 DendroPaintFunc(valoresMatriz, tablaMatrix)
 }
 \arguments{
 \item{valoresMatriz}{Tree Matrix with all grups generatod by, normally from 2 to limit-1 \"cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))\"}
 
 \item{tablaMatrix}{Cross original matrix Document-Term with relation 1 or 0 if term exist or not}
+
+\item{valoresMatriz}{Tree Matrix with all grups generatod by, normally from 2 to limit-1 \"cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))\"}
+
+\item{tablaMatrix}{Cross original matrix Document-Term with relation 1 or 0 if term exist or not}
 }
 \value{
 Object DendroTree
+
+Object DendroTree
 }
 \description{
+Paint in console the dondrogram and return a list with non empty cross elements group
+
 Paint in console the dondrogram and return a list with non empty cross elements group
 }
