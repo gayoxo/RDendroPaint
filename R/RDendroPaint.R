@@ -1,3 +1,7 @@
+
+setClass("DendroTree", slots=list(name="character", sons="list", documents="character", values="character"))
+
+
 PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
   
   
@@ -305,8 +309,7 @@ procesaListaMatrix <- function (entrada,Ekival,tablaMatrix)
 #'@return Object DendroTree 
 RDendroPaint <- function(valoresMatriz,tablaMatrix) {
   
-  setClass("DendroTree", slots=list(name="character", sons="list", documents="character", values="character"))
-  
+
   Ekival=list();
   
   for (i in 1:length(rownames(tablaMatrix)))
@@ -423,6 +426,9 @@ pintaRDendroPaintLevel<- function(ListaSal,level){
   }
     
 }
+
+
+test <-function(){
 
 #Carga de librerias
 library(LSAfun)
@@ -608,4 +614,4 @@ valoresDendro = cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))
 ListaSal=RDendroPaint(valoresDendro,t(TDM))
 
 pintaRDendroPaint(ListaSal)
-
+}
