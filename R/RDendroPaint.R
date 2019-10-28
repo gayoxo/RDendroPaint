@@ -627,7 +627,7 @@ valoresDendro = cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))
 
 #WriteDendro(valoresDendro)
 
-ListaSal=DendroPaintFunc(valoresDendro,t(TDM))
+ListaSal=dendroPaintFunc(valoresDendro,t(TDM))
 
 pintaRDendroPaint(ListaSal)
 }
