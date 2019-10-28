@@ -1,4 +1,4 @@
-Package: DendroPaint
+Package: RDendroPaint
 Type: Package
 Title: Tools for procesing dendrograms
 Version: 0.1.1
