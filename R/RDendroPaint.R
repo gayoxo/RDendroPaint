@@ -367,6 +367,8 @@ dendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   
   RDendroPaint.var<<-RDendroPaint.var+1
   
+  print(tablaMatrix)
+  
   RootEle<-PintaDendro(valoresMatriz,Ekival,RootEle,tablaMatrix)
   
   return(RootEle)
