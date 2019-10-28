@@ -1,5 +1,5 @@
 #Internal
-PintaDendro <- function(valoresMatriz,spaces=0, Lista) {
+PintaDendroOLD <- function(valoresMatriz,spaces=0, Lista) {
 
 
   library(stringi)
@@ -162,7 +162,7 @@ PintaDendro <- function(valoresMatriz,spaces=0, Lista) {
         WriteDendro.var<<-WriteDendro.var+1
 
 
-        Lista<-PintaDendro(subvaloresmatrizCal,spaces+1,Lista)
+        Lista<-PintaDendroOLD(subvaloresmatrizCal,spaces+1,Lista)
       }
       else
       {
@@ -413,7 +413,7 @@ WriteDendro <- function(valoresMatriz,tablaMatrix,masdocumenWrite=FALSE,masvacio
 
   WriteDendro.var<<-WriteDendro.var+1
 
-  Lista<-PintaDendro(valoresMatriz,0,Lista)
+  Lista<-PintaDendroOLD(valoresMatriz,0,Lista)
 
   for (nombrelis in names(Lista)) {
     pintalo=TRUE

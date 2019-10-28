@@ -4,16 +4,16 @@
 \alias{PintaDendro}
 \title{PintaDendro}
 \usage{
-PintaDendro(valoresMatriz, spaces = 0, Lista)
+PintaDendro(valoresMatriz, Ekival, RootEle, tablaMatrix)
 }
 \arguments{
 \item{valoresMatriz}{Tree Matrix with all grups generatod by, normally from 2 to limit-1 \"cutree(hclust_avg, k =2:(length(hclust_avg$order)-1))\"}
 
-\item{tablaMatrix}{Cross original matrix Document-Term with relation 1 or 0 if term exist or not}
-
 \item{Ekival}{Equivalent Tabla}
 
 \item{RootEle}{Elemento Padre}
+
+\item{tablaMatrix}{Cross original matrix Document-Term with relation 1 or 0 if term exist or not}
 }
 \value{
 Object DendroTree
