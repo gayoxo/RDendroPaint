@@ -18,8 +18,6 @@ PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
   
   library(stringi)
   
-  print(tablaMatrix)
-  
   listaNew=list();
   
   if (is.array(valoresMatriz)){
@@ -365,8 +363,7 @@ dendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   
   RDendroPaint.var<<-RDendroPaint.var+1
   
-  print(tablaMatrix)
-  
+
   RootEle<-PintaDendro(valoresMatriz,Ekival,RootEle,tablaMatrix)
   
   return(RootEle)
