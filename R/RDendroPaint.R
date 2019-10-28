@@ -16,11 +16,9 @@ DendroTree<-setClass("DendroTree", slots=list(name="character", sons="list", doc
 #'@export
 PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
   
-  
-  print(tablaMatrix)
-  
   library(stringi)
   
+  print(tablaMatrix)
   
   listaNew=list();
   
