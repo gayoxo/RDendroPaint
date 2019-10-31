@@ -423,6 +423,8 @@ pintaRDendroPaintLevel<- function(ListaSal,level){
   
   print(paste(base,"Documentos: ",rownamesvect ,sep = ""))
   
+  debugvar=ListaSal@values
+  
   if (is.vector( ListaSal@values))
   {
     if (length( ListaSal@values)>0)
@@ -637,3 +639,5 @@ ListaSal=dendroPaintFunc(valoresDendro,t(TDM))
 
 pintaRDendroPaint(ListaSal)
 }
+
+test()
