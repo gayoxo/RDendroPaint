@@ -62,7 +62,7 @@ PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
       
       RootEleI@documents<-rownamesvect;
       
-      RooteVAlue<-procesaListaMatrix(rownamesvect,Ekival,tablaMatrix)
+      RooteVAlue<-procesaListaMatrixVec(rownamesvect,Ekival,tablaMatrix)
       if (!is.null(RooteVAlue))
         RootEleI@values<-RooteVAlue
       
@@ -169,7 +169,7 @@ PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
         
         RootEleI@documents<-rownamesvect;
         
-        RooteVAlue<-procesaListaMatrix(rownamesvect,Ekival,tablaMatrix)
+        RooteVAlue<-procesaListaMatrixVec(rownamesvect,Ekival,tablaMatrix)
         if (!is.null(RooteVAlue))
           RootEleI@values<-RooteVAlue
         
@@ -204,7 +204,7 @@ PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
           
           RootEleI@documents<-rownamesvect;
           
-          RooteVAlue<-procesaListaMatrix(rownamesvect,Ekival,tablaMatrix)
+          RooteVAlue<-procesaListaMatrixVec(rownamesvect,Ekival,tablaMatrix)
           if (!is.null(RooteVAlue))
             RootEleI@values<-RooteVAlue
           
@@ -225,7 +225,7 @@ PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
             
             RootEleI2@documents<-nombresTa;
             
-            RooteVAlue<-procesaListaMatrix(nombresTa,Ekival,tablaMatrix)
+            RooteVAlue<-procesaListaMatrixVec(nombresTa,Ekival,tablaMatrix)
             if (!is.null(RooteVAlue))
               RootEleI2@values<-RooteVAlue
             
@@ -257,7 +257,7 @@ PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
 
 
 
-procesaListaMatrix <- function (entrada,Ekival,tablaMatrix)
+procesaListaMatrixVec <- function (entrada,Ekival,tablaMatrix)
 {
   
   #print(Ekival)
@@ -355,7 +355,7 @@ dendroPaintFunc <- function(valoresMatriz,tablaMatrix) {
   
   RootEle@documents<-c(rownamesvect);
   
-  RooteVAlue<-procesaListaMatrix(rownamesvect,Ekival,tablaMatrix)
+  RooteVAlue<-procesaListaMatrixVec(rownamesvect,Ekival,tablaMatrix)
   if (!is.null(RooteVAlue))
     RootEle@values<-RooteVAlue
   
