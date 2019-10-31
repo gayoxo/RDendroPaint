@@ -236,7 +236,7 @@ procesaLista <- function (entrada)
   return(rownamesvect)
 }
 
-procesaListaMatrix <- function (entrada,Ekival,tablaMatrix)
+procesaListaMatrixOLD <- function (entrada,Ekival,tablaMatrix)
 {
 
   #print(Ekival)
@@ -420,13 +420,13 @@ WriteDendro <- function(valoresMatriz,tablaMatrix,masdocumenWrite=FALSE,masvacio
   #  print(pintalo)
     if (!masvacios)
     {
-      solucion=procesaListaMatrix(Lista[[nombrelis]],Ekival,tablaMatrix)
+      solucion=procesaListaMatrixOLD(Lista[[nombrelis]],Ekival,tablaMatrix)
      # print(solucion)
       if (is.null(solucion))
         pintalo=FALSE
       else
       {
-      pintalo=!(stri_isempty(procesaListaMatrix(Lista[[nombrelis]],Ekival,tablaMatrix)))
+      pintalo=!(stri_isempty(procesaListaMatrixOLD(Lista[[nombrelis]],Ekival,tablaMatrix)))
       }
   #    print(pintalo)
     }
@@ -434,15 +434,15 @@ WriteDendro <- function(valoresMatriz,tablaMatrix,masdocumenWrite=FALSE,masvacio
     if (pintalo)
     {
     if (masdocumenWrite)
-      print(paste(nombrelis,":",procesaLista(Lista[[nombrelis]]),"->{",procesaListaMatrix(Lista[[nombrelis]],Ekival,tablaMatrix),"}",sep = ""))
+      print(paste(nombrelis,":",procesaLista(Lista[[nombrelis]]),"->{",procesaListaMatriOLD(Lista[[nombrelis]],Ekival,tablaMatrix),"}",sep = ""))
     else
-      print(paste(nombrelis,":","{",procesaListaMatrix(Lista[[nombrelis]],Ekival,tablaMatrix),"}",sep = ""))
+      print(paste(nombrelis,":","{",procesaListaMatrixOLD(Lista[[nombrelis]],Ekival,tablaMatrix),"}",sep = ""))
     }
 
     solucion=procesaListaMatrixNoFile(Lista[[nombrelis]],Ekival,tablaMatrix)
 
     if (!is.null(solucion))
-      if(!(stri_isempty(procesaListaMatrix(Lista[[nombrelis]],Ekival,tablaMatrix))))
+      if(!(stri_isempty(procesaListaMatrixOLD(Lista[[nombrelis]],Ekival,tablaMatrix))))
         ClusterSet[[solucion]]=TRUE
 
   }
