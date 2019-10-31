@@ -639,5 +639,3 @@ ListaSal=dendroPaintFunc(valoresDendro,t(TDM))
 
 pintaRDendroPaint(ListaSal)
 }
-
-test()
