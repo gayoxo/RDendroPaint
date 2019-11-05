@@ -301,7 +301,7 @@ procesaListaMatrixVec <- function (entrada,Ekival,tablaMatrix)
   else
   {
     for (i in 1:length(subma)){
-      if (subma[i]==1)
+      if (subma[i]!=0)
         salida=c(salida,names(subma)[i])
       
     }
