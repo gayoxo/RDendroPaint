@@ -306,7 +306,7 @@ procesaListaMatrixVec <- function (entrada,Ekival,tablaMatrix)
     }
   }
 
-  
+  print(salida)
   return(salida)
 }
 
