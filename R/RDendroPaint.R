@@ -260,8 +260,9 @@ PintaDendro <- function(valoresMatriz,Ekival,RootEle,tablaMatrix) {
 procesaListaMatrixVec <- function (entrada,Ekival,tablaMatrix)
 {
   
-  print(Ekival)
-  print(entrada)
+#  print(paste("Ekival:",Ekival,sep = ""))
+#  print(paste("Entrada:",entrada,sep = ""))
+#  print(paste("tablaMatrix:",tablaMatrix,sep = ""))
   
   validos=c();
   if (is.vector(entrada))
