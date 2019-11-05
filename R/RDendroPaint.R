@@ -452,7 +452,7 @@ pintaRDendroPaintLevel<- function(ListaSal,level){
 }
 
 
-test <-function(){
+test <-function(Pathname){
 
 #Carga de librerias
 library(LSAfun)
@@ -472,10 +472,10 @@ library(RJSONIO)
 library(stringr)
 
 #Install my Library
-#library(devtools)
-#install_github("gayoxo/RDendroPaint")
+library(devtools)
+install_github("gayoxo/RDendroPaint")
 
-#library(DendroPaint)
+library(RDendroPaint)
 
 #Aleatorio
 
@@ -486,7 +486,8 @@ nowF =paste(now,"_concept",sep  = "")
 nowF
 
 #Fuende de los ficheros
-source_dir = "C:/TMP/LSAText/Arte"
+source_dir = Pathname
+#"C:/TMP/LSAText/Arte"
 
 #Matiz
 data(stopwords_en)
